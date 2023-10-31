@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSewa</title>
+    
+    <link rel="stylesheet" href="assets/CSS/chatbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/animate css/animate.min.css">
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    
+</head>
+
+
+<body>
+    
+    <div id="root"></div>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">smart_toy</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        <div class="chatbot">
+            <header>
+                <h2>Chatbot</h2>
+                <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi there 👋<br>How can I help you today?</p>
+                </li>
+            </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+    
+    <div id="esw-index-wrap">
+        
+        <section class="brand-nav-wrap">
+            <form action="submit" onsubmit="return login_logout();"method="post">
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                            <div class="logo-wrap">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/sewa1.png" alt="Sewa" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="login-toggle">
+                                <button class="login-toggle-btn" type="submit">Login</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                            <div class="search-input-wrap position-relative p-0">
+                                <style>
+                                    .nav-search-input::placeholder {
+                                      font-size: 10px; /* You can adjust this value to your preferred font size */
+                                    }
+                                  </style>
+                                  
+                                  <input class="nav-search-input form-control" type="text" placeholder="Search services/Merchant by tags (e.g. adsl)">
+                                  
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                            <div class="user-login-wrap">
+                                <div class="row">
+                                    <div style="display:block" class="col-md-4 col-lg-4 col-xl-4 p-0">
+                                        <div class="id-wrap mbc position-relative">
+                                            <input type="text" class="e-number me-1" placeholder="Sewa ID" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 p-0">
+                                        <div class="pw-wrap mbc position-relative">
+                                            <input type="password" class="e-password me-1" placeholder="Password"
+                                                required>
+                                            <div class="fpw-wrap">
+                                                <a href="#" class="forget-pw d-flex">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 p-0">
+                                        <div class="login-container mbc">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="login-btn-wrap">
+                                                        <button class="login-btn me-1" onclick="return login_logout();">Login</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="register-btn-wrap">
+                                                        <button class="register-btn">Register</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="logout-btn-wrap">
+                                                        <button class="logout-btn" onclick="return login_logout()">Logout</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <section class="sec-navbar-wrap mb-3">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-wrap mb-0 p-0">
+                            <li class="li-items">
+                                <a href="#">Top Up</a></li>
+                            <li class="li-items"><a href="#">Airlines</a></li>
+                            <li class="li-items"><a href="#">Internet Bills</a></li>
+                            <li class="li-items"><a href="#">Load Fund</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-body-wrap mbw-wrap">
+            <div class="body-content landing-page">
+                <div class="container">
+                    <img src="assets/images/banner/frontpage.png" class="img-fluid" alt="bluebook renewal">
+                </div>
+            </div>
+        </section>
+
+        <section class="main-body-wrap mbw-wrap">
+            <div class="body-content popular-services">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="header-txt">
+                                    <h4>Popular Services</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <button class="btn-showcase">View more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrap">
+                        <div class="content-carousel">
+                            <div class="content-stage-outer cso">
+                                <div class="content-stage">
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/nepali.png" class="img-fluid"
+                                                        alt="bluebook renewal">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Bluebook renewal (Sawari Nabikaran)</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/internationalflight.png"
+                                                        class="img-fluid" alt="flight ticket">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">International Flight Ticket</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/yeti.png"
+                                                        class="img-fluid" alt="yeti">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Reward Redeem Point with Yeti</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/britishcouncil.png"
+                                                        class="img-fluid" alt="british council">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">British Council Services Nepal Pvt. Ltd.</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/daraz.png"
+                                                        class="img-fluid" alt="daraz">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Daraz</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/meroshare.png"
+                                                        class="img-fluid" alt="meroshare">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Meroshare & Demat Renew</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/name.png"
+                                                        class="img-fluid" alt="name">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">NAME Institute, Putalisadak</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/agriculturalbank.png"
+                                                        class="img-fluid" alt="agricultural bank">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Agricultural Development Bank Recruitment</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/rastrabank.png"
+                                                        class="img-fluid" alt="rastra bank">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Nepal Rastra Bank Recruitment</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/providendfund.png"
+                                                        class="img-fluid" alt="provident fund">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Employees Provident Fund Recruitment</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/nec.png"
+                                                        class="img-fluid" alt="NEC">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Nepal Engineering College Admission</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/tdo.png"
+                                                        class="img-fluid" alt="tdo">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">TDO Nepal</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/popular-services/schartedbank.png"
+                                                        class="img-fluid" alt="SCB">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Standard Chartered Bank</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content new-services">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="header-txt">
+                                    <h4>New Services</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <button class="btn-showcase">View more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrap">
+                        <div class="content-carousel">
+                            <div class="content-stage-outer cso">
+                                <div class="content-stage">
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="offer-tag"> 2% Cashback, Promo Code: DISH </div>
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/dishhome.png"
+                                                        class="img-fluid" alt="dish yearly offer">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">DishHome Yearly Offer</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/purbanchal.png"
+                                                        class="img-fluid" alt="purbanchal">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Purbanchal University Faculty of Science and
+                                                    Technology</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/ticketoncall.png"
+                                                        class="img-fluid" alt="ticket on call">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Ticket on Call</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/pea.png" class="img-fluid"
+                                                        alt="loksewa">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">PEA Loksewa</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/refernearn.png"
+                                                        class="img-fluid" alt="refer and earn">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Refer and Earn</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/ielts.png"
+                                                        class="img-fluid" alt="ielts">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">IDP IELTS</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/tootle.png"
+                                                        class="img-fluid" alt="tootle">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Tootle - Topup</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="offer-tag"> 15% Cashback </div>
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/new-services/samsung.png"
+                                                        class="img-fluid" alt="samsung">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Samsung Home Appliance</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content Blogs">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="header-txt">
+                                    <h4>Blogs</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <button class="btn-showcase">View more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrap">
+                        <div class="content-carousel">
+                            <div class="content-stage-outer cso">
+                                <div class="content-stage">
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/chatbot_blog.jpeg"
+                                                        class="img-fluid" alt="dish yearly offer">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">How to Use Chatbot</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/blog.png"
+                                                        class="img-fluid" alt="purbanchal">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Lorem Ipsum</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/fisrtblog.jpeg"
+                                                        class="img-fluid" alt="ticket on call">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Lorem Ipsum</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/secondblog.jpeg" class="img-fluid"
+                                                        alt="loksewa">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Lorem Ipsum</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">Lorem Ipsum</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/moneychat.jpeg"
+                                                        class="img-fluid" alt="refer and earn">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Refer and Earn</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/third.png"
+                                                        class="img-fluid" alt="ielts">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Lorem Ipsum</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/fourthblog.jpeg"
+                                                        class="img-fluid" alt="tootle">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Lorem Ipsum</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                    <div class="content-item" style="width: 226px;">
+                                        <figure class="showcase-item">
+                                            <div class="fig-img">
+                                                <div class="fig-img-oval">
+                                                    <img src="assets/images/logo/blog/fifth.jpeg"
+                                                        class="img-fluid" alt="samsung">
+                                                </div>
+                                            </div>
+                                            <figcaption class="caption">
+                                                <h5 class="caption-txt">Lorem Ipsum</h5>
+                                            </figcaption>
+                                            <button class="btn btn-view-details">View Details</button>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="partners-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="partner-header">
+                            <h4>Partner Banks</h4>
+                        </div>
+                        <div class="partner-slide-wrap">
+                            <div class="partner-slider">
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.adbl.gov.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/adbl.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://bestfinance.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/best-finance.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.bok.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/bok.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://centurybank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/century-bank.jpg" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.ctznbank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/citizen.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.civilbank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/civil.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://everestbankltd.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/everest.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.edb.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/excel_development.png"
+                                            class="img-fluid" alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.garimabank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/garima_bikash_bank.png"
+                                            class="img-fluid" alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://globalimebank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/global_IME.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="http://greenbank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/green-dev-bank.jpg" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.gurkhasfinance.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/gurkha.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.icfcbank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/icfc-finacne.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://jbbl.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/jyoti_bikash_bank.png"
+                                            class="img-fluid" alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="http://kailashbank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/kailash_bikash_bank.png"
+                                            class="img-fluid" alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.kumaribank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/kumari_bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.laxmibank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/laxmi_bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.nabilbank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/nabilbank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.nccbank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/NCC-bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://nepalbank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/Nepal_Bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://nibl.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/nibl.jpg" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.nicasiabank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/NIC_asia.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.nmb.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/NMB_bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.prabhubank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/prabhu-bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.rbb.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/RBB.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.sanimabank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/sanima-bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://nsbl.statebank/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/sbi.jpg" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.siddharthabank.com/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/siddharthabank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                                <div class="bank-wrap">
+                                    <a target="_blank" href="https://www.sunrisebank.com.np/" class="bank-details">
+                                        <img src="assets/images/logo/Bank partners/sunrise-bank.png" class="img-fluid"
+                                            alt="adbl">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="footer-wrap">
+            <footer role="site-footer" class="footer-site">
+                <div class="footer-top-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-2">
+                                <div class="esewa-logo-footer">
+                                    <img src="assets/images/logo/sewa1.png" alt="eSewa" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="footer-list">
+                                    <h4>Policy</h4>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="#">Privacy Policies</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Information Security Policy</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Terms and Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Report Fraud/ Misuse of Account</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Transaction Limits</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="footer-list">
+                                    <h4>General</h4>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="#">Getting Started</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Security</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">SMS Syntax</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Reward Points</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Video Tutorials</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">eSewa Tariffs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="footer-list">
+                                    <h4>Company</h4>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Career</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Blog/ News</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="footer-list">
+                                    <h4>Partners</h4>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="#">Banks</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Western Union</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="footer-list">
+                                    <h4>Help</h4>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href="#">Developer's Guide</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">FAQ's</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="#">Contact us</a>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-success btn-become-merchant">Become a merchant</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-card">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer-card-list">
+                                    <div class="footer-card-list-item fcli-certificate">
+                                        <h5>&nbsp;</h5>
+                                        <ul class="d-flex">
+                                            <li>
+                                                <img src="assets/images/footer/img_verified_by_visa-min.png"
+                                                    class="img-fluid" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/footer/img_mastercard_secure-min.png"
+                                                    class="img-fluid" alt="">
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="#">
+                                                    <img src="assets/images/footer/ISO.png" class="img-fluid" alt=""
+                                                        style="height: 35px;">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-card-list-item fcli-mobapps">
+                                        <h5>Download Mobile Apps</h5>
+                                        <ul class="d-flex">
+                                            <li>
+                                                <a title="Play Store" target="_blank"
+                                                    href="https://play.google.com/store/apps">
+                                                    <img src="assets/images/footer/img_google_play_badge.png"
+                                                        class="img-fluid" alt="playstore">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="App Store" target="_blank"
+                                                    href="https://www.apple.com/app-store/">
+                                                    <img src="assets/images/footer/img_appstore_badge.png"
+                                                        class="img-fluid" alt="Appstore">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-card-list-item fcli-powered-by">
+                                        <h5>&nbsp;</h5>
+                                        <ul class="d-flex">
+                                            <li>
+                                                <a target="_blank" href="http://www.f1soft.com/">
+                                                    <img src="assets/images/footer/f1-logo-new.png" class="img-fluid"
+                                                        alt="f1soft">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-6">
+                                © 2009-
+                                <span id="currentYear">2023/03/08</span>
+                                eSewa. All Rights Reserved.
+                            </div>
+                            <div class="col-xs-5 col-md-6">
+                                <div class="social-media">
+                                    <div class="social-media-title">
+                                        "Keep in touch"
+                                    </div>
+                                    <ul class="social-media-icon mb-0">
+                                        <li>
+                                            <a title="Facebook" href=""
+                                                class="fa fa-facebook-square"></a>
+                                        </li>
+                                        <li>
+                                            <a title="Twitter" href=""
+                                                class="fa fa-twitter-square"></a>
+                                        </li>
+                                        <li>
+                                            <a title="Youtube"
+                                                href=""
+                                                class="fa fa-youtube-square"></a>
+                                        </li>
+                                        <li>
+                                            <a title="Linkedin" href=""
+                                                class="fa fa-linkedin-square"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </section>
+
+        <section class="page-scroll-top" onclick="click()" style="display: none;">
+            <div class="icon-arrow-up">
+
+            </div>
+        </section>
+
+
+
+    </div>
+</body>
+<script src="assets/JavaScript/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/JavaScript/popper.min.js"></script>
+<script src="assets/animate css/slick-animation.min.js"></script>
+<script src="assets/slick-1.8.1/slick/slick.min.js"></script>
+<script src="assets/JavaScript/script.js"></script>
+<script src="assets/JavaScript/chatbot.js"></script>
+
+</html>

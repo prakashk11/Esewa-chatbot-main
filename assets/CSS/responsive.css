@@ -1,0 +1,294 @@
+@media only screen and (max-width:750px) {
+
+
+    #esw-index-wrap .brand-nav-wrap {
+        height: unset;
+        padding: 10px 0;
+        width: 96%;
+    }
+
+    #esw-index-wrap .brand-nav-wrap .logo-wrap a .img-fluid{
+        width: 100px;
+    }
+
+    #esw-index-wrap .brand-nav-wrap .logo-wrap,
+    #esw-index-wrap .brand-nav-wrap .login-toggle {
+        display: inline-flex;
+        margin-bottom: 10px;
+    }
+
+    #esw-index-wrap .brand-nav-wrap .login-toggle {
+        float: right;
+    }
+    #esw-index-wrap .brand-nav-wrap .login-toggle-btn {
+        outline: none;
+        border: 1px solid white;
+        border-radius: 4px;
+        line-height: 30px;
+        color: white;
+        padding: 0 10px;
+        background-color: transparent;
+    }
+
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap {
+        display: none;
+    }
+
+    #esw-index-wrap .sec-navbar-wrap .list-wrap {
+        font-size: 10px;
+        padding: 0 10px !important;
+    }
+
+    #esw-index-wrap .sec-navbar-wrap .list-wrap a {
+        margin-right: 10px !important;
+    }
+    #esw-index-wrap .sec-navbar-wrap {
+        margin-top: 98px;
+    }
+
+    #esw-index-wrap .banner-menu{
+        display: block;
+        border: 1px solid #e6e5e5;
+        border-radius: 4px;
+        background-color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    #esw-index-wrap .banner-menu .banner-menu-btn{
+        border: none;
+        color: green;
+        font-size: 20px;
+        background:none;
+
+    }
+
+    #esw-index-wrap .banner-loader-wrap #menu-collapse {
+        display: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* #esw-index-wrap .banner-loader-wrap .banner-menu .dropdown-menu {
+        width: 100%;
+        left: ;
+    } */
+
+    #esw-index-wrap .mbw-wrap .slick-next::before {
+        visibility: hidden !important;
+    }
+    #esw-index-wrap .mbw-wrap .slick-prev::before {
+        visibility: hidden !important;
+    }
+
+    #esw-index-wrap .mbw-wrap .caption-txt {
+        font-size: 10px;
+        margin-bottom: 5px;
+        line-height: 14px;
+        -webkit-line-clamp: 1;
+    }
+
+    #esw-index-wrap .mbw-wrap .showcase-item {
+        height: 120px;
+        width: 92px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #esw-index-wrap .mbw-wrap .showcase-item .btn-view-details {
+        font-size: 10px;
+        padding: 0;
+        width: 70px;
+        bottom: 30px;
+    }
+
+    #esw-index-wrap .showcase-item .offer-tag {
+        font-size: 7px;
+        line-height: normal;
+    }
+
+    #esw-index-wrap .mbw-wrap .header-txt h4 {
+        font-size: 14px;
+    }
+
+    #esw-index-wrap .content-wrap {
+        background-color: #fff;
+        padding: 5px 7px;
+        border-radius: 3px;
+        margin-bottom: 30px;
+    }
+
+    #esw-index-wrap .mbw-wrap .content-item {
+        padding: 0;
+        height: 125px;
+    }
+
+    #esw-index-wrap .mbw-wrap .header-wrap .col-xs-6 {
+        width: unset;
+    }
+
+    #esw-index-wrap .mbw-wrap .header-wrap .row {
+        justify-content: space-between;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card {
+        border: unset;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-site .footer-top-section {
+        display: none;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-certificate ul li {
+        width: 53px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-certificate ul {
+        justify-content: center;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .footer-card-list {
+        justify-content: center;
+        display: block;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-mobapps ul li:first-child a {
+        height: 40px;
+        width: 100px;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-mobapps ul {
+        justify-content: center;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-mobapps ul li a {
+        display: block;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+    }
+
+    #esw-index-wrap .footer-card-list h5 {
+        display: none;
+    }
+
+    #esw-index-wrap .footer-card-list-item h5 {
+        margin-bottom: 15px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        opacity: .54;
+        width: 100%;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-powered-by ul li a {
+        width: 90px;
+        height: 35px;
+        padding: 5px;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-card .fcli-powered-by ul {
+        justify-content: center;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-copyright {
+        text-align: center;
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-copyright .social-media-title {
+        display: none;
+    }
+
+    #esw-index-wrap .partners-wrap .partner-slide-wrap .bank-wrap {
+        height: 20px;
+    }
+
+    #esw-index-wrap .footer-wrap .footer-copyright .row .col-md-6 {
+        width: unset;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:1020px) and (min-width:760px) {
+
+
+
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .id-wrap .e-number,
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .pw-wrap .e-password{
+        width: 130px;
+        font-size: 12px;
+    }
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .login-btn-wrap .login-btn,
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .register-btn-wrap .register-btn{
+        font-size: 12px;
+    }
+
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .logout-btn-wrap .logout-btn:hover {
+        font-size: 12px;
+    }
+    #esw-index-wrap .banner-loader-wrap .side-loader .side-loader-item .side-loader-link {
+        padding: 3px 15px 3px 15px;
+    }
+    #esw-index-wrap .banner-loader-wrap .side-loader .side-loader-item a::after {
+        font-size: 10px;
+        top: 4px;
+    }
+    #esw-index-wrap .mbw-wrap .slick-next::before,
+    #esw-index-wrap .mbw-wrap .slick-prev::before {
+        visibility: hidden !important;
+    }
+    #esw-index-wrap .mbw-wrap .showcase-item .btn-view-details {
+        width: 100px;
+    }
+    .slick-dots li button:before {
+        display: none;
+    }
+    #esw-index-wrap .mbw-wrap .caption-txt{
+        font-size: 12px;
+        height: 15px;
+    }
+    #esw-index-wrap .mbw-wrap .content-item {
+        height: 175px;
+    }
+    #esw-index-wrap .footer-wrap .footer-card .fcli-certificate ul li {
+        width: unset;
+    }
+
+
+}
+
+
+@media only screen and (min-width:1022px) {
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .id-wrap .e-number,
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .pw-wrap .e-password{
+        width: 180px;
+        
+    }
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .id-wrap{
+        width: 210px;
+        margin-right: unset;
+    }
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .login-btn-wrap{
+        padding-right: 2.5px;
+        padding-left: 5px;
+    }
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .register-btn-wrap .logout-btn .logout-btn-wrap{
+        padding-left: 2.5px;
+    }
+    #esw-index-wrap .brand-nav-wrap .user-login-wrap .mbc .col-6{
+        padding-right: 0;
+    }
+}
