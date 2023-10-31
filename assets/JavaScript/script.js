@@ -122,7 +122,7 @@ function logout() {
   document.querySelector('.register-btn').style.display= 'block';
   document.querySelector('.id-wrap').style.display= 'block';
   document.querySelector('.pw-wrap').style.display= 'block';
-  document.querySelector('.chatbot-toggler').style.display= 'none';
+  document.querySelector('.chatbot-toggler').style.display= 'flex';
   document.querySelector('.logout-btn').style.display= 'none';
 }
 
